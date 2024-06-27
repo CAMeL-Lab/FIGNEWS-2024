@@ -37,7 +37,8 @@ def get_slice_by(df, s_type, batch, team, task, annotator = None):
     # ignore annotator filter if no annotator is given
     annotator_filter = (df.sheet_type == annotator) if annotator else True
 
-    return df[(df.type == s_type) & (df.batch == batch) & (df.team_name == team) & (df.task == task) & (annotator_filter)].reset_index(drop=True)
+    data_slice = df[(df.type == s_type) & (df.batch == batch) & (df.team_name == team) & (df.task == task) & (annotator_filter)].reset_index(drop=True).copy()
+    return data_slice.sort_values(['batch', 'source_language', 'id'])
 
 def get_annotator_details(pair):
     if 'sheet_type' in pair[0]:
