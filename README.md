@@ -11,7 +11,7 @@ The overarching objective is to establish a shared corpus for comprehensive anno
 
 You can find more details about this shared task at the [FIGNEWS homepage](https://sites.google.com/view/fignews/home).
 
-The full dataset (including the original and machin translated text lines) can be found on the CAMeL Lab Hugging Face page [here](https://huggingface.co/datasets/CAMeL-Lab/FIGNEWS-2024).
+The full dataset (including the original and machin translated text lines) can be found on the [CAMeL Lab Hugging Face page](https://huggingface.co/datasets/CAMeL-Lab/FIGNEWS-2024).
 
 ### Description of this repository
 
