@@ -19,14 +19,29 @@ This repository contains the data and guidelines submitted by the participating 
 ```
 |- data
     |- FIGNEWS-2024-ALL-CLEAN.tsv
+    |- guidelines
 |- get_metrics.py
 |- LICENSE
 |- README.md
 ```
 - **data/FIGNEWS-2024-ALL-CLEAN.tsv** contains all the data collected from the participating teams
+- **data/guidelines** contains the guidelines for participating teams
 - **get_metrics.py** is the script that is used to generate metrics such as the Cohen's Kappa and the F1 score within and across teams
 - **LICENSE** is the MIT License
 - **README** is this document
+- **requirements.txt** file containing dependencies
+
+### Getting metrics
+
+After selecting your virtual environment, install the required packages:
+```
+pip install -r requirements.txt
+```
+
+You can then obtain the data metrics by running the following:
+```
+python get_metrics.py -i data/FIGNEWS-2024-ALL-CLEAN.tsv -o [output/dir/of/your/choice]
+```
 
 ### Shared Task Organizers
 
