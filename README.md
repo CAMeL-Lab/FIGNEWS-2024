@@ -23,6 +23,7 @@ This repository contains the data and guidelines submitted by the participating 
 |- get_metrics.py
 |- LICENSE
 |- README.md
+|- requirements.txt
 ```
 - **data/FIGNEWS-2024-ALL-CLEAN.tsv** contains all the data collected from the participating teams
 - **data/guidelines** contains the guidelines for participating teams
