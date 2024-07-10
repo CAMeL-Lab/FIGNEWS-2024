@@ -27,3 +27,21 @@ This repository contains the data and guidelines submitted by the participating 
 - **get_metrics.py** is the script that is used to generate metrics such as the Cohen's Kappa and the F1 score within and across teams
 - **LICENSE** is the MIT License
 - **README** is this document
+
+### Shared Task Organizers
+
+Wajdi Zaghouani, Hamad Bin Khalifa University (Qatar)
+
+Mustafa Jarrar, Birzeit University (Palestine)
+
+Nizar Habash, New York University Abu Dhabi (UAE)
+
+Houda Bouamor, Carnegie Mellon University (Qatar)
+
+Imed Zitouni, Google (USA)
+
+Mona Diab, Carnegie Mellon University (USA)
+
+Samhaa R. El-Beltagy, Newgiza University (Egypt)
+
+Muhammed AbuOdeh, New York University Abu Dhabi (UAE)
