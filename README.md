@@ -11,26 +11,38 @@ The overarching objective is to establish a shared corpus for comprehensive anno
 
 You can find more details about this shared task at the [FIGNEWS homepage](https://sites.google.com/view/fignews/home).
 
-The full dataset (including the original and machin translated text lines) can be found on the [CAMeL Lab Hugging Face page](https://huggingface.co/datasets/CAMeL-Lab/FIGNEWS-2024).
+The full dataset (including the original and machine translated text lines) can be found on the [CAMeL Lab Hugging Face page](https://huggingface.co/datasets/CAMeL-Lab/FIGNEWS-2024).
 
 ### Description of this repository
 
 This repository contains the data and guidelines submitted by the participating teams, as well as a script to calculate metrics both across and within teams. The folder structure is as follows:
 ```
 |- data
+    |- FIGNEWS-2024-ALL-CLEAN-FLAT.tsv
     |- FIGNEWS-2024-ALL-CLEAN.tsv
+    |- FIGNEWS-2024-TEXT-IAA.tsv
+    |- FIGNEWS-2024-TEXT-MAIN.tsv
     |- guidelines
 |- get_metrics.py
 |- LICENSE
 |- README.md
 |- requirements.txt
 ```
+- **data/FIGNEWS-2024-ALL-CLEAN-FLAT.tsv** contains the label counts chosen by teams per text row
 - **data/FIGNEWS-2024-ALL-CLEAN.tsv** contains all the data collected from the participating teams
+- **data/FIGNEWS-2024-TEXT-IAA.tsv** contains the original IAA file provided to the participating teams
+- **data/FIGNEWS-2024-TEXT-MAIN.tsv** contains the original MAIN file provided to the participating teams
 - **data/guidelines** contains the guidelines for participating teams
 - **get_metrics.py** is the script that is used to generate metrics such as the Cohen's Kappa and the F1 score within and across teams
 - **LICENSE** is the MIT License
 - **README** is this document
 - **requirements.txt** file containing dependencies
+
+### A note on the data
+
+The unique ID per row is created using multiple columns:
+- In FIGNEWS-2024-TEXT-IAA.tsv and FIGNEWS-2024-TEXT-MAIN.tsv the columns are 'Batch', 'Source Language', and 'ID'.
+- In FIGNEWS-2024-ALL-CLEAN-FLAT.tsv and FIGNEWS-2024-ALL-CLEAN.tsv the columns are 'batch', 'source_language', and 'id', and 'type'.
 
 ### Getting metrics
 
